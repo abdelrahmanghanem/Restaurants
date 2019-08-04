@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u25-HR-Cdn">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--المطاعم-->
+        <scene sceneID="Alx-Z3-PSV">
+            <objects>
+                <viewController id="aIq-Ck-d3Z" customClass="RestaurantListViewController" customModule="Restaurants" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1mF-Nq-slS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiQ-34-upv">
+                                <rect key="frame" x="20" y="433" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.87450980392156863" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="restaurantButton1"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YiQ-34-upv" firstAttribute="leading" secondItem="QhL-Gz-wCW" secondAttribute="leading" constant="20" id="0Ic-J0-QGX"/>
+                            <constraint firstItem="QhL-Gz-wCW" firstAttribute="trailing" secondItem="YiQ-34-upv" secondAttribute="trailing" constant="20" id="F5J-8s-N51"/>
+                            <constraint firstItem="YiQ-34-upv" firstAttribute="centerY" secondItem="1mF-Nq-slS" secondAttribute="centerY" id="boz-by-QlB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QhL-Gz-wCW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="المطاعم" id="ie8-ZO-ZUZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSg-Nb-ZWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094.2028985507247" y="145.98214285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tom-Ro-1YQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u25-HR-Cdn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hC8-Ev-jDx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aIq-Ck-d3Z" kind="relationship" relationship="rootViewController" id="PE2-Dv-87D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5r-T2-NPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184.05797101449278" y="145.98214285714286"/>
+        </scene>
+    </scenes>
+</document>
