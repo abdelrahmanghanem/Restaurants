@@ -1,12 +1,4 @@
-//
-//  AppDelegate.swift
-//  Restaurants
-//
-//  Created by abdelrahman on 6/25/19.
-//  Copyright © 2019 abdelrahman. All rights reserved.
-//
 
-import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
